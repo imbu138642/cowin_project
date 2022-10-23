@@ -138,10 +138,6 @@
       width: 250px;
     }
 
-    .text-3 {
-      font-weight: 50px;
-    }
-
     .vaccination {
       border: 3px solid #fd5428;
       border-radius: 8px;
@@ -157,6 +153,148 @@
       height: 60px;
       background: linear-gradient(120deg, #007c7c 50%, #04c4c4 0);
 
+    }
+
+    .btn2 {
+      background: #fcbf02;
+      border-radius: 25px;
+      height: 40px;
+      padding: 0.55rem 2.55rem;
+      color: #4d3b03;
+      font-weight: 700;
+      margin-top: 10px;
+      text-transform: uppercase;
+      font-size: 13px;
+      border: 2px solid #fff;
+    }
+
+    .vaccination-doses {
+      /* display: flex; */
+      /* width: 600px; */
+    }
+
+    .vaccination-count {
+      width: 757px;
+      font-weight: 600;
+    }
+
+    .contact {
+      background-image: linear-gradient(90deg, #017e7e 80%, #0c6161);
+      color: #fff;
+      padding: 10px 0 10px 10px;
+      font-size: 13px;
+      border: none;
+      cursor: pointer;
+      width: 130px;
+      height: 57px;
+      box-shadow: 0 10px 10px -10px #333;
+      border-top-left-radius: 38px;
+      border-bottom-left-radius: 38px;
+      position: fixed;
+      right: 0;
+      top: 210px;
+      z-index: 2;
+    }
+
+    .call {
+      margin-left: 10px;
+
+      align-items: flex-end;
+    }
+
+    .get-vaccinated {}
+
+    .three-steps {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: #007c7c;
+      background-color: #edffff;
+    }
+
+    .card-image {
+      width: 240px;
+      height: 120px;
+    }
+
+    .cards {
+      background-color: #edffff;
+      height: 380px;
+    }
+
+    .card {
+      box-shadow: 7px 3px 3px 7px #d8f0f4;
+      border-radius: 5px;
+      height: 324px;
+      position: static;
+    }
+
+    .card-text {
+      width: 100%;
+      background-color: #007c7c;
+    }
+
+    .nearest-centre {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: #007c7c
+    }
+
+    .text-centre {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .nav {
+      width: 600px;
+    }
+
+    .nav-tabs {
+      border-bottom: 2px solid grey;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-header-items {
+      display: flex;
+      justify-content: space-between;
+      width: 400px;
+      margin-left: 30px;
+    }
+
+    select,
+    .profile>input {
+      width: 300px;
+      height: 45px;
+      border-radius: 20px;
+    }
+
+    .home>button,
+    .profile>button {
+      border-radius: 20px;
+      width: 100px;
+      height: 40px;
+    }
+    .mapouter {
+      position: relative;
+      text-align: right;
+      width: 1100px;
+      height: 410px;
+    }
+
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      width: 1100px;
+      height: 410px;
+    }
+
+    .gmap_iframe {
+      width: 1100px !important;
+      height: 410px !important;
     }
 
     @media screen and (max-width: 1100px) {
@@ -265,17 +403,117 @@
             </div>
             <p class="border border-3 border-danger mt-4 vaccination"><img
                 src="https://www.cowin.gov.in/assets/images/verified.svg" class="me-3"> <span
-                style="font-size: 30px;font-weight: 600;">200 CRORE VACCINATIONS</span></p>
+                style="font-size: 30px;font-weight: 700;">200 CRORE VACCINATIONS</span></p>
             <p class="text-3 mt-4" style="font-weight: 800;">India is set to defeat covid-19.Every indian making it
               possible.</p>
           </div>
         </div>
         <div class="w-50"><img src="	https://www.cowin.gov.in/assets/images/independance.svg"></div>
       </div>
+      <div class="contact"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+        </svg><span class="call">Support For</span>
+        <span>COVID-19</span>
+      </div>
     </section>
     <section>
-      <div class="vaccination-count-container">
-        <h1>hello</h1>
+      <div class="vaccination-count-container bg-light d-flex justify-content-center">
+        <div class="vaccination-count d-flex justify-content-around">
+          <div class="vaccination-doses d-flex align-items-center text-light"><span>Total vaccination
+              doses<br>2,19,52,92,375</span></div>
+          <div class="btn2 btn-warning">View more</div>
+          <div class="d-flex align-items-center text-light">Vaccination done today<br>2,662</div>
+        </div>
+      </div>
+      <div class="get-vaccinated">
+        <div class="three-steps">
+          <h2> Get Vaccinated In 3 Easy Steps</h2>
+        </div>
+        <div class="cards d-flex justify-content-center">
+          <div class="card me-3" style="width: 15rem;">
+            <img src="./Step_1.svg" class="card-img-top card-image" alt="...">
+            <div class="card-body p-0">
+              <p class="card-text  p-3 text-light">Book an Appointment on Co-WIN or Walk into any Vaccination Center.
+              </p>
+              <p class="p-2 ">How to book your appointment on Co-Win?</p>
+            </div>
+          </div>
+          <div class="card me-3" style="width: 15rem;">
+            <img src="./Step_2.svg" class="card-img-top card-image" alt="...">
+            <div class="card-body p-0">
+              <p class="card-text  p-3 text-light ">Get Your Vaccination Safely at the Time of Your Appointment
+                .</p>
+              <p class="p-2 ">Dos and Don't for getting vaccinated</p>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem;">
+            <img src="./Step_3.svg  " class="card-img-top card-image" alt="...">
+            <div class="card-body p-0">
+              <p class="card-text p-3 text-light">
+                Download Your Vaccination Certificate from Co-WIN and Wait for Dose #2</p>
+              <p class="p-2">Download your vaccine certificate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="nearest-centre">Search Your Nearest Vaccination Centre</h2>
+      <p class="text-centre">Get a preview list of the nearest centers and check availability of vaccination slots</p>
+      <p class="text-center">Login To Book Your Slot</p>
+      <div class="d-flex w-100 flex-column align-items-center">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <div class="nav-header-items">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active text-secondary" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-secondary" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-secondary" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+            </li>
+          </div>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="home mt-4">
+              <select>
+                <option>kerala</option>
+                <option>tamilnadu</option>
+                <option>uther pradesh</option>
+                <option>karnataka</option>
+              </select>
+              <select name="" id="">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+              <button>Search</button>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="profile mt-4">
+              <input type="search" placeholder="search pincode">
+              <button>Search</button>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <div class="mapouter  mt-4">
+              <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                  marginheight="0" marginwidth="0"
+                  src="https://maps.google.com/maps?width=929&amp;height=480&amp;hl=en&amp;q=vengara&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                  href="https://piratebay-proxys.com/">Pirate bay</a></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>

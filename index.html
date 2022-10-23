@@ -278,6 +278,14 @@
       width: 100px;
       height: 40px;
     }
+
+    .contacts>input {
+      width: 600px;
+      height: 45px;
+      border-radius: 20px;
+
+    }
+
     .mapouter {
       position: relative;
       text-align: right;
@@ -295,6 +303,58 @@
     .gmap_iframe {
       width: 1100px !important;
       height: 410px !important;
+    }
+
+    .free-covid {
+      margin-top: 65px;
+      padding-left: 40px;
+    }
+
+    .free-covid>button,
+    .side-effect>button,
+    .child-vaccin>button,
+    .vaccin-date>button {
+      border-radius: 20px;
+      width: 150px;
+      height: 40px;
+      background-color: #0c6161;
+      color: white;
+    }
+
+    .report {
+      background-color: #d9fcfc;
+    }
+
+    .side-effect {
+      color: #0c6161;
+    }
+
+    .map-search {
+      background-image: url('./search.svg');
+      background-position: right;
+      background-repeat: no-repeat;
+      background-position-x: 560px;
+    }
+
+    #map {
+
+      position: fixed !important;
+      height: 100% !important;
+      width: 100% !important;
+
+    }
+
+    .child-vaccin {
+      color: #0c6161;
+    }
+
+    .date-correction {
+      background-color: #baf7f7;
+    }
+
+    .vaccin-date {
+      color: #0c6161;
+
     }
 
     @media screen and (max-width: 1100px) {
@@ -467,16 +527,19 @@
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <div class="nav-header-items">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active text-secondary" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+              <button class="nav-link active text-secondary" id="home-tab" data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                aria-selected="true">Home</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link text-secondary" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+              <button class="nav-link text-secondary" id="profile-tab" data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                aria-selected="false">Profile</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link text-secondary" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+              <button class="nav-link text-secondary" id="contact-tab" data-bs-toggle="tab"
+                data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                aria-selected="false">Contact</button>
             </li>
           </div>
         </ul>
@@ -507,8 +570,11 @@
           </div>
           <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
             <div class="mapouter  mt-4">
-              <div class="nearest-btn"><input type="search" placeholder="search nearest location">
-                <button>search</button></div>
+
+              <div class="contacts d-flex justify-content-center"><input type="search" class="map-search mb-3"
+                  placeholder="search nearest location">
+              </div>
+
               <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
                   marginheight="0" marginwidth="0"
                   src="https://maps.google.com/maps?width=929&amp;height=480&amp;hl=en&amp;q=vengara&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
@@ -518,8 +584,149 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="slot w-100 d-flex">
+        <div class="free-covid w-50">
+          <h2>Free COVID Precuation Dose</h2>
+          <p>Now Precaution dose for 18-59 age group free at Government <br />Vaccination Centre.</p>
+          <button>Book Your Slot</button>
+        </div>
+        <div class="w-50"><img src="	https://www.cowin.gov.in/assets/images/free_covid_precaution_dose.svg"></div>
+      </div>
+      <div>
+        <div class="report w-100 d-flex">
+          <div class="w-50"><img src="	https://www.cowin.gov.in/assets/images/reports-aefi.svg" alt=""></div>
+       
+        <div class="side-effect w-50">
+          <h2>Report Side Effect</h2>
+          <p>If you have experienced any side effect after COVID-19 vaccination, it can be <br />reported on Co-WIN
+            using your registered mobile number.</p>
+          <button>Report Now </button>
+        </div>
+      </div>
+      </div>
+      <div class=" w-100 d-flex">
+        <div class=" child-vaccin w-50">
+        <h2>Children Vaccination</h2>
+        <ul>
+          <li>Covovax vaccine is now available for Children of the age group 12+ yrs in Private Vaccination Centre.
+            <br />
+            The time span between first and second dose of Covovax is 21 days.<br />
+            Children can be administered with the second dose of Covovax within a month.</li>
+          <li>Children of the age group 12-14 yrs are now eligible for the Corbevax vaccine in <br />
+            Government Vaccination Centre and in Private Vaccination Centre 12+ yrs. The period <br />
+            between a first and second dose of Corbevax is 28 days.</li>
+          <li>Covaxin is available for Children of the age group of 15+ yrs in both Government and <br />
+            Private Vaccination Centre. Children must be completed 4 to 6 weeks after administration <br />
+            of the first dose of Covaxin to take the second dose of Covaxin. Both online and walk-in <br />
+            are available.</li>
+        </ul>
+        <button>Book Your Slot</button></div>
+        <div class="w-50"><img src="	https://www.cowin.gov.in/assets/images/Children_Vaccination.svg"></div>
+      </div>
+      <div class="date-correction w-100 d-flex ">
+        <div class="w-50"><img src="	https://www.cowin.gov.in/assets/images/Date_Correction.svg"></div>
+        <div class="vaccin-date w-50">
+          <h2>Vaccination Date Correction</h2>
+          <p>
+
+            If the date printed on your vaccination certificate differs from the actual date of<br />
+            vaccine administration, you may raise a request for correction of the same by <br />
+            submitting a valid proof of correct vaccination date.</p>
+          <button>Update Date</button>
+        </div>
+        </div>
+        <div>
+          <div>
+            <h2>Precuation Dose</h2>
+            <ul>
+              <li>All fully vaccinated adult citizens (18+ and have taken 2 doses) are eligible for precaution <br/>
+                dose from 10/04/2022. Eligible citizens can avail precaution dose at any Government or <br/>
+                 Private Vaccination Centre. Citizens should carry their Final Certificate of vaccination <br/>
+                  (with details of both earlier doses). Citizens should use the same mobile number and ID <br/>
+                   card used for earlier doses.</li>
+              <li>HCWs, FLWs and Citizens aged 60 year or more, shall continue to receive precaution dose <br/>
+                 vaccination at any CVC, including free of charge vaccination at Government Vaccination <br/>
+                 Centre.</li>
+              <li>For international travel, precaution dose can be administered to such beneficiary less than <br/>
+                9 months to at a minimum interval of 3 months (90 days) from the date of administration of <br/>
+                the second dose as recorded on Co-WlN as per requirement of the destination country. <br/>
+                All Vaccination centre in the State where precaution dose is being administered are <br/>
+                 eligible to administer precaution dose.
+              </li>
+            </ul>
+            <button>Book Your Slot</button>
+          </div>
+        </div>
+    </section>
+    <footer class="text-light">
+      <div class="w-100 bg-dark d-flex justify-content-between">
+        <div class="d-flex">
+        <div class="">
+          <h4>VACCINATION SERVICES</h4>
+          <p>Register Members</p>
+          <p>Search Vaccination Centers</p>
+          <p>Book Vaccination Slots</p>
+          <p>Manage Appointment</p>
+          <p>Download Certificate</p>
+        </div>
+        <div class="">
+          <h4>PLATFORMS</h4>
+          <p>Co-WIN Internationals</p>
+          <p>Vaccinator</p>
+          <p>Department Login</p>
+          <p>Verify Certificates</p>
+          <p>Vaccination Statistics</p>
+        </div>
+        <div class="">
+          <h4>RESOURCES</h4>
+          <p>How To Get Vaccinated</p>
+          <p>Dos and Don'ts</p>
+          <p>Overview</p>
+          <p>Open API's</p>
+          <p>Download Certificate</p>
+        </div>
+      </div>
+        <div class="">
+          <div class="d-flex">
+            <div class="">
+              <h4>RESOURCES</h4>
+              <p>How To Get Vaccinated</p>
+              <p>Dos and Don'ts</p>
+            </div>
+            <div class="">
+              <h4>RESOURCES</h4>
+              <p>How To Get Vaccinated</p>
+              <p>Dos and Don'ts</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="">
+              <h4>RESOURCES</h4>
+              <p>How To Get Vaccinated</p>
+            </div>
+            <div class="">
+              <h4>RESOURCES</h4>
+              <p>How To Get Vaccinated</p>
+            </div>
+            <div class="">
+              <h4>RESOURCES</h4>
+              <p>How To Get Vaccinated</p>
+            </div>
+            <div class="">
+              <h4>RESOURCES</h4>
+              <p>How To Get Vaccinated</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex w-100">
+<div class=""><h6>Copyright © 2021 Co-WIN. All Rights Reserved</h6></div>
+<div class=""></div>
+<div class=""></div>
+      </div>
+    </footer>
   </main>
-  <footer></footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

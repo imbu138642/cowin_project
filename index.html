@@ -255,13 +255,7 @@
       display: flex;
       justify-content: center;
     }
-
-    li {
-      color: red;
-    }
-
-
-    .nav-header-items {
+     .nav-header-items {
       display: flex;
       justify-content: space-between;
       width: 400px;
@@ -375,6 +369,7 @@
     .raise-issue {
       background-color: #0c6161;
       height: 420px;
+     
     }
 
     .issuecard {
@@ -402,12 +397,16 @@
       background-color: white;
     }
 
+    .slot {
+      margin-top: 100px;
+    }
+
     /*  */
     .tab {
       overflow: hidden;
       border-bottom: 2px solid #ccc;
 
-      width: 400px;
+      width: 700px;
       display: flex;
       justify-content: space-evenly;
       margin-left: 450px;
@@ -445,6 +444,18 @@
     }
 
     /*  */
+    .wraping {
+      display: flex;
+      flex-wrap: wrap;
+    }
+     .delivery {
+      background-color: #0c6161;
+      width: 200px;
+      height:auto;
+      border-radius: 0px 5px 5px 0px;
+      margin-left: 30px;
+      font-size: 20px;
+     }
     @media screen and (max-width: 1100px) {
       .resposive-nav-link {
         display: none;
@@ -728,7 +739,6 @@
       </div>
 
       <div id="Tokyo" class="tabcontent">
-        <h3>B</h3>
         <div class="mapouter mt-4" style="z-index: -1;">
           <div class="contacts d-flex justify-content-center">
             <input type="search" class="map-search mb-3" placeholder="search nearest location" />
@@ -745,7 +755,7 @@
     </section>
     <section>
       <div class="slot w-100 d-flex">
-        <div class="free-covid w-50">
+        <div class="free-covid w-50 ">
           <h2>Free COVID Precuation Dose</h2>
           <p>
             Now Precaution dose for 18-59 age group free at Government
@@ -908,9 +918,12 @@
       <div class="click-more"><button>Click Here To Know More</button></div>
       <div class="raise-issue">
         <div class="d-flex justify-content-center text-white pt-5">
-          <h2>Raise An Issue</h2> </div>
-        <div class="d-flex justify-content-center text-white p-3"><p>Raise an issue or get solutions to your Co-WIN account and vaccination certificate related issues
-            instantly.</p></div>
+          <h2>Raise An Issue</h2>
+        </div>
+        <div class="d-flex justify-content-center text-white p-3">
+          <p>Raise an issue or get solutions to your Co-WIN account and vaccination certificate related issues
+            instantly.</p>
+        </div>
 
         <div class=" issues d-flex">
           <div class="issuecard ">
@@ -945,7 +958,15 @@
         </div>
       </div>
       <div class="">
-        <h2 class="d-flex justify-content-center">Frequently Asked Questions</h2>
+        <h2 class=" justify-content-center">Frequently Asked Questions</h2>
+        <div class="tab d-flex justify-content-between">
+          <button class="tablink" onclick="openCity(event, 'London')"><strong>All</strong></button>
+          <button class="tablink" onclick="openCity(event, 'Paris')"><strong>Registration</strong></button>
+          <button class="tablink" onclick="openCity(event, 'Tokyo')"><strong>vaccination Schedule</strong></button>
+          <button class="tablink" onclick="openCity(event, 'Tokyo')"><strong>Scheduling Appointment-General</strong></button>
+          
+        </div>
+
         <div class="questions">
           <button><img src="">Download</button>
         </div>
@@ -953,6 +974,26 @@
       </div>
       <div>
         <h2>What's New ON Co-Win</h2>
+      </div>
+      <div class="wraping ">
+
+        <div class="card d-flex flex-wrap">
+          <img src="https://www.cowin.gov.in/assets/images/numbering_new.svg">
+          <p>New feature to report side effects after covid-19 vaccination.
+            This new feature is added to Co-WIN which will allow you to report if there are any side effects after
+            Covid-19 Vaccination.
+
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="vaccine-drive"><h2>India Is Running The World's Largest Vaccination Drive</h2></div>
+        <div class=""><span>Vaccine Delivered</span> </div>
+        <div class="delivery"><span>2,19,56,29,862 + 26,486</span></div>
+      <div class=""><span>Citizens Fully Vaccinated</span></div>
+      <div class="delivery"><span>94.99 Crore + 3,33</span></div>
+      <div class=""><span>% of Fully Vaccinated</span></div>
+      <div class="delivery">92.51%</div>
       </div>
     </section>
     <footer class="text-light">

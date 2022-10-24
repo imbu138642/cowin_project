@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <style>
     * {
       padding: 0;
@@ -152,7 +152,6 @@
       width: 100%;
       height: 60px;
       background: linear-gradient(120deg, #007c7c 50%, #04c4c4 0);
-
     }
 
     .btn2 {
@@ -238,14 +237,13 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      color: #007c7c
+      color: #007c7c;
     }
 
     .text-centre {
       width: 100%;
       display: flex;
       justify-content: center;
-
     }
 
     .nav {
@@ -283,7 +281,6 @@
       width: 600px;
       height: 45px;
       border-radius: 20px;
-
     }
 
     .mapouter {
@@ -313,7 +310,9 @@
     .free-covid>button,
     .side-effect>button,
     .child-vaccin>button,
-    .vaccin-date>button {
+    .vaccin-date>button,
+    .precuation>button,
+    .know-more>button {
       border-radius: 20px;
       width: 150px;
       height: 40px;
@@ -330,18 +329,16 @@
     }
 
     .map-search {
-      background-image: url('./search.svg');
+      background-image: url("./search.svg");
       background-position: right;
       background-repeat: no-repeat;
       background-position-x: 560px;
     }
 
     #map {
-
       position: fixed !important;
       height: 100% !important;
       width: 100% !important;
-
     }
 
     .child-vaccin {
@@ -354,9 +351,41 @@
 
     .vaccin-date {
       color: #0c6161;
-
     }
 
+    .abha-image {
+      width: 250px;
+    }
+
+    .click-more>button {
+      border-radius: 20px;
+      width: 200px;
+      height: 40px;
+      background-color: #0c6161;
+      color: white;
+    }
+
+    .raise-issue {
+      background-color: #0c6161;
+    }
+
+    .issuecard {
+      width: 300px;
+      text-align: center;
+      background: #fff 0 0 no-repeat padding-box;
+      box-shadow: 0 8px 25px rgb(64 48 107 / 25%);
+      border-radius: 10px;
+      padding: 20px 15px;
+      margin: 0 auto;
+    }
+   
+   .questions >button {
+    border-radius: 20px;
+      width: 150px;
+      height: 40px;
+     background-color: white;
+     border-color: #0c6161;
+   }
     @media screen and (max-width: 1100px) {
       .resposive-nav-link {
         display: none;
@@ -387,8 +416,8 @@
   <header>
     <div class="upper-header">
       <div class="logo">
-        <img src="./emblem-gov.svg">
-        <p>Ministry of Health and Family Welfare </p>
+        <img src="./emblem-gov.svg" />
+        <p>Ministry of Health and Family Welfare</p>
       </div>
       <div class="d-flex upper-header-part-2 border-1">
         <div class="header-buttons">
@@ -421,7 +450,7 @@
     </div>
     <div class="lower-header d-flex justify-content-between">
       <div class="logo-2">
-        <img src="https://www.cowin.gov.in/assets/images/new-logo.svg">
+        <img src="https://www.cowin.gov.in/assets/images/new-logo.svg" />
       </div>
       <div class="nav justify-content-evenly align-content-center">
         <a class="link resposive-nav-link" href="">ABHA(Health ID)</a>
@@ -434,7 +463,7 @@
             <span>REGISTER / SIGNIN</span>
           </a>
         </div>
-        <div class=" dropdown-container btn-group me-3">
+        <div class="dropdown-container btn-group me-3">
           <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
@@ -457,21 +486,27 @@
     <section>
       <div class="w-100 d-flex">
         <div class="w-50 d-flex flex-column align-items-center mt-5">
-          <div style="height: 400px;">
-            <div class="text "><strong>Historic & Unparalleled Achievement ! <br />
+          <div style="height: 400px">
+            <div class="text">
+              <strong>Historic & Unparalleled Achievement ! <br />
                 India’s Glorious Journey of</strong>
             </div>
-            <p class="border border-3 border-danger mt-4 vaccination"><img
-                src="https://www.cowin.gov.in/assets/images/verified.svg" class="me-3"> <span
-                style="font-size: 30px;font-weight: 700;">200 CRORE VACCINATIONS</span></p>
-            <p class="text-3 mt-4" style="font-weight: 800;">India is set to defeat covid-19.Every indian making it
-              possible.</p>
+            <p class="border border-3 border-danger mt-4 vaccination">
+              <img src="https://www.cowin.gov.in/assets/images/verified.svg" class="me-3" />
+              <span style="font-size: 30px; font-weight: 700">200 CRORE VACCINATIONS</span>
+            </p>
+            <p class="text-3 mt-4" style="font-weight: 800">
+              India is set to defeat covid-19.Every indian making it possible.
+            </p>
           </div>
         </div>
-        <div class="w-50"><img src="	https://www.cowin.gov.in/assets/images/independance.svg"></div>
+        <div class="w-50">
+          <img src="	https://www.cowin.gov.in/assets/images/independance.svg" />
+        </div>
       </div>
-      <div class="contact"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-telephone-fill" viewBox="0 0 16 16">
+      <div class="contact">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill"
+          viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
         </svg><span class="call">Support For</span>
@@ -481,38 +516,46 @@
     <section>
       <div class="vaccination-count-container bg-light d-flex justify-content-center">
         <div class="vaccination-count d-flex justify-content-around">
-          <div class="vaccination-doses d-flex align-items-center text-light"><span>Total vaccination
-              doses<br>2,19,52,92,375</span></div>
+          <div class="vaccination-doses d-flex align-items-center text-light">
+            <span>Total vaccination doses<br />2,19,52,92,375</span>
+          </div>
           <div class="btn2 btn-warning">View more</div>
-          <div class="d-flex align-items-center text-light">Vaccination done today<br>2,662</div>
+          <div class="d-flex align-items-center text-light">
+            Vaccination done today<br />2,662
+          </div>
         </div>
       </div>
       <div class="get-vaccinated">
         <div class="three-steps">
-          <h2> Get Vaccinated In 3 Easy Steps</h2>
+          <h2>Get Vaccinated In 3 Easy Steps</h2>
         </div>
         <div class="cards d-flex justify-content-center">
-          <div class="card me-3" style="width: 15rem;">
-            <img src="./Step_1.svg" class="card-img-top card-image" alt="...">
-            <div class="card-body p-0">
-              <p class="card-text  p-3 text-light">Book an Appointment on Co-WIN or Walk into any Vaccination Center.
-              </p>
-              <p class="p-2 ">How to book your appointment on Co-Win?</p>
-            </div>
-          </div>
-          <div class="card me-3" style="width: 15rem;">
-            <img src="./Step_2.svg" class="card-img-top card-image" alt="...">
-            <div class="card-body p-0">
-              <p class="card-text  p-3 text-light ">Get Your Vaccination Safely at the Time of Your Appointment
-                .</p>
-              <p class="p-2 ">Dos and Don't for getting vaccinated</p>
-            </div>
-          </div>
-          <div class="card" style="width: 15rem;">
-            <img src="./Step_3.svg  " class="card-img-top card-image" alt="...">
+          <div class="card me-3" style="width: 15rem">
+            <img src="./Step_1.svg" class="card-img-top card-image" alt="..." />
             <div class="card-body p-0">
               <p class="card-text p-3 text-light">
-                Download Your Vaccination Certificate from Co-WIN and Wait for Dose #2</p>
+                Book an Appointment on Co-WIN or Walk into any Vaccination
+                Center.
+              </p>
+              <p class="p-2">How to book your appointment on Co-Win?</p>
+            </div>
+          </div>
+          <div class="card me-3" style="width: 15rem">
+            <img src="./Step_2.svg" class="card-img-top card-image" alt="..." />
+            <div class="card-body p-0">
+              <p class="card-text p-3 text-light">
+                Get Your Vaccination Safely at the Time of Your Appointment .
+              </p>
+              <p class="p-2">Dos and Don't for getting vaccinated</p>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <img src="./Step_3.svg  " class="card-img-top card-image" alt="..." />
+            <div class="card-body p-0">
+              <p class="card-text p-3 text-light">
+                Download Your Vaccination Certificate from Co-WIN and Wait for
+                Dose #2
+              </p>
               <p class="p-2">Download your vaccine certificate</p>
             </div>
           </div>
@@ -521,7 +564,10 @@
     </section>
     <section>
       <h2 class="nearest-centre">Search Your Nearest Vaccination Centre</h2>
-      <p class="text-centre">Get a preview list of the nearest centers and check availability of vaccination slots</p>
+      <p class="text-centre">
+        Get a preview list of the nearest centers and check availability of
+        vaccination slots
+      </p>
       <p class="text-center">Login To Book Your Slot</p>
       <div class="d-flex w-100 flex-column align-items-center">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -529,17 +575,23 @@
             <li class="nav-item" role="presentation">
               <button class="nav-link active text-secondary" id="home-tab" data-bs-toggle="tab"
                 data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                aria-selected="true">Home</button>
+                aria-selected="true">
+                Home
+              </button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link text-secondary" id="profile-tab" data-bs-toggle="tab"
                 data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
-                aria-selected="false">Profile</button>
+                aria-selected="false">
+                Profile
+              </button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link text-secondary" id="contact-tab" data-bs-toggle="tab"
                 data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
-                aria-selected="false">Contact</button>
+                aria-selected="false">
+                Contact
+              </button>
             </li>
           </div>
         </ul>
@@ -564,21 +616,21 @@
           </div>
           <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
             <div class="profile mt-4">
-              <input type="search" placeholder="search pincode">
+              <input type="search" placeholder="search pincode"/>
               <button>Search</button>
             </div>
           </div>
           <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-            <div class="mapouter  mt-4">
-
-              <div class="contacts d-flex justify-content-center"><input type="search" class="map-search mb-3"
-                  placeholder="search nearest location">
+            <div class="mapouter mt-4">
+              <div class="contacts d-flex justify-content-center">
+                <input type="search" class="map-search mb-3" placeholder="search nearest location" />
               </div>
 
-              <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
-                  marginheight="0" marginwidth="0"
+              <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                   src="https://maps.google.com/maps?width=929&amp;height=480&amp;hl=en&amp;q=vengara&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                  href="https://piratebay-proxys.com/">Pirate bay</a></div>
+                  href="https://piratebay-proxys.com/">Pirate bay</a>
+              </div>
             </div>
           </div>
         </div>
@@ -588,107 +640,240 @@
       <div class="slot w-100 d-flex">
         <div class="free-covid w-50">
           <h2>Free COVID Precuation Dose</h2>
-          <p>Now Precaution dose for 18-59 age group free at Government <br />Vaccination Centre.</p>
+          <p>
+            Now Precaution dose for 18-59 age group free at Government
+            <br />Vaccination Centre.
+          </p>
           <button>Book Your Slot</button>
         </div>
-        <div class="w-50"><img src="	https://www.cowin.gov.in/assets/images/free_covid_precaution_dose.svg"></div>
+        <div class="w-50">
+          <img src="	https://www.cowin.gov.in/assets/images/free_covid_precaution_dose.svg" />
+        </div>
       </div>
       <div>
         <div class="report w-100 d-flex">
-          <div class="w-50"><img src="	https://www.cowin.gov.in/assets/images/reports-aefi.svg" alt=""></div>
-       
-        <div class="side-effect w-50">
-          <h2>Report Side Effect</h2>
-          <p>If you have experienced any side effect after COVID-19 vaccination, it can be <br />reported on Co-WIN
-            using your registered mobile number.</p>
-          <button>Report Now </button>
+          <div class="w-50">
+            <img src="	https://www.cowin.gov.in/assets/images/reports-aefi.svg" alt="" />
+          </div>
+
+          <div class="side-effect w-50">
+            <h2>Report Side Effect</h2>
+            <p>
+              If you have experienced any side effect after COVID-19
+              vaccination, it can be <br />reported on Co-WIN using your
+              registered mobile number.
+            </p>
+            <button>Report Now</button>
+          </div>
         </div>
       </div>
+      <div class="w-100 d-flex">
+        <div class="child-vaccin w-50">
+          <h2>Children Vaccination</h2>
+          <ul>
+            <li>
+              Covovax vaccine is now available for Children of the age group
+              12+ yrs in Private Vaccination Centre.
+              <br />
+              The time span between first and second dose of Covovax is 21
+              days.<br />
+              Children can be administered with the second dose of Covovax
+              within a month.
+            </li>
+            <li>
+              Children of the age group 12-14 yrs are now eligible for the
+              Corbevax vaccine in <br />
+              Government Vaccination Centre and in Private Vaccination Centre
+              12+ yrs. The period <br />
+              between a first and second dose of Corbevax is 28 days.
+            </li>
+            <li>
+              Covaxin is available for Children of the age group of 15+ yrs in
+              both Government and <br />
+              Private Vaccination Centre. Children must be completed 4 to 6
+              weeks after administration <br />
+              of the first dose of Covaxin to take the second dose of Covaxin.
+              Both online and walk-in <br />
+              are available.
+            </li>
+          </ul>
+          <button>Book Your Slot</button>
+        </div>
+        <div class="w-50">
+          <img src="	https://www.cowin.gov.in/assets/images/Children_Vaccination.svg" />
+        </div>
       </div>
-      <div class=" w-100 d-flex">
-        <div class=" child-vaccin w-50">
-        <h2>Children Vaccination</h2>
-        <ul>
-          <li>Covovax vaccine is now available for Children of the age group 12+ yrs in Private Vaccination Centre.
-            <br />
-            The time span between first and second dose of Covovax is 21 days.<br />
-            Children can be administered with the second dose of Covovax within a month.</li>
-          <li>Children of the age group 12-14 yrs are now eligible for the Corbevax vaccine in <br />
-            Government Vaccination Centre and in Private Vaccination Centre 12+ yrs. The period <br />
-            between a first and second dose of Corbevax is 28 days.</li>
-          <li>Covaxin is available for Children of the age group of 15+ yrs in both Government and <br />
-            Private Vaccination Centre. Children must be completed 4 to 6 weeks after administration <br />
-            of the first dose of Covaxin to take the second dose of Covaxin. Both online and walk-in <br />
-            are available.</li>
-        </ul>
-        <button>Book Your Slot</button></div>
-        <div class="w-50"><img src="	https://www.cowin.gov.in/assets/images/Children_Vaccination.svg"></div>
-      </div>
-      <div class="date-correction w-100 d-flex ">
-        <div class="w-50"><img src="	https://www.cowin.gov.in/assets/images/Date_Correction.svg"></div>
+      <div class="date-correction w-100 d-flex">
+        <div class="w-50">
+          <img src="	https://www.cowin.gov.in/assets/images/Date_Correction.svg" />
+        </div>
         <div class="vaccin-date w-50">
           <h2>Vaccination Date Correction</h2>
           <p>
-
-            If the date printed on your vaccination certificate differs from the actual date of<br />
-            vaccine administration, you may raise a request for correction of the same by <br />
-            submitting a valid proof of correct vaccination date.</p>
+            If the date printed on your vaccination certificate differs from
+            the actual date of<br />
+            vaccine administration, you may raise a request for correction of
+            the same by <br />
+            submitting a valid proof of correct vaccination date.
+          </p>
           <button>Update Date</button>
         </div>
+      </div>
+
+      <div class="d-flex w-100">
+        <div class="precuation w-50">
+          <h2>Precuation Dose</h2>
+          <ul>
+            <li>
+              All fully vaccinated adult citizens (18+ and have taken 2 doses)
+              are eligible for precaution <br />
+              dose from 10/04/2022. Eligible citizens can avail precaution
+              dose at any Government or <br />
+              Private Vaccination Centre. Citizens should carry their Final
+              Certificate of vaccination <br />
+              (with details of both earlier doses). Citizens should use the
+              same mobile number and ID <br />
+              card used for earlier doses.
+            </li>
+            <li>
+              HCWs, FLWs and Citizens aged 60 year or more, shall continue to
+              receive precaution dose <br />
+              vaccination at any CVC, including free of charge vaccination at
+              Government Vaccination <br />
+              Centre.
+            </li>
+            <li>
+              For international travel, precaution dose can be administered to
+              such beneficiary less than <br />
+              9 months to at a minimum interval of 3 months (90 days) from the
+              date of administration of <br />
+              the second dose as recorded on Co-WlN as per requirement of the
+              destination country. <br />
+              All Vaccination centre in the State where precaution dose is
+              being administered are <br />
+              eligible to administer precaution dose.
+            </li>
+          </ul>
+          <button>Book Your Slot</button>
         </div>
-        <div>
-          <div>
-            <h2>Precuation Dose</h2>
-            <ul>
-              <li>All fully vaccinated adult citizens (18+ and have taken 2 doses) are eligible for precaution <br/>
-                dose from 10/04/2022. Eligible citizens can avail precaution dose at any Government or <br/>
-                 Private Vaccination Centre. Citizens should carry their Final Certificate of vaccination <br/>
-                  (with details of both earlier doses). Citizens should use the same mobile number and ID <br/>
-                   card used for earlier doses.</li>
-              <li>HCWs, FLWs and Citizens aged 60 year or more, shall continue to receive precaution dose <br/>
-                 vaccination at any CVC, including free of charge vaccination at Government Vaccination <br/>
-                 Centre.</li>
-              <li>For international travel, precaution dose can be administered to such beneficiary less than <br/>
-                9 months to at a minimum interval of 3 months (90 days) from the date of administration of <br/>
-                the second dose as recorded on Co-WlN as per requirement of the destination country. <br/>
-                All Vaccination centre in the State where precaution dose is being administered are <br/>
-                 eligible to administer precaution dose.
-              </li>
-            </ul>
-            <button>Book Your Slot</button>
+        <div class="w-25">
+          <img src="https://www.cowin.gov.in/assets/images/Precaution_dose.svg" />
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="w-50">
+          <img src="https://www.cowin.gov.in/assets/images/share_illustration.svg" />
+        </div>
+        <div class="w-75">
+          <h2>Share Your Vaccination Status</h2>
+          <p>
+            Be a Fighter! If you are fully or partially vaccinated, you can
+            now share your <br />
+            vaccination status in your social circle. Let's encourage our
+            friends and <br />
+            followers in joining India's battle against COVID-19.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <h2>ABHA (Health ID) and its Benefits</h2>
+      </div>
+      <div class="d-flex justify-content-center">
+        <p>
+          ABHA (earlier known as Health ID) is an acronym for Ayushman Bharat
+          Health Account. Using ABHA (Health ID) is the first step towards
+          creating safer and <br />
+          efficient digital health records for you and your family. It enables
+          your interaction with participating healthcare providers, and allows
+          you to receive your digital lab <br />
+          reports, prescriptions and diagnosis seamlessly from verified
+          healthcare professionals and health service providers.
+        </p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="card d-flex" style="width: 450px ">
+          <img src="https://www.cowin.gov.in/assets/images/abha-preview.jpg" width="450px" ; />
+        </div>
+        <div class="card">
+          <img src="	https://www.cowin.gov.in/assets/images/abha-previewimg.jpg" width="450px" />
+        </div>
+      </div>
+      <div class="click-more d-flex justify-content-center"><button>Click Here To Know More</button></div>
+      <div class="raise-issue">
+        <div class="">
+          <h2>Raise An Issue</h2>
+          <p>Raise an issue or get solutions to your Co-WIN account and vaccination certificate related issues
+            instantly.</p>
+            <div class=" issues d-flex w-100">
+          <div class="issuecard w-20">
+            <h6>Merge Certificates</h6>
+            <p>In case you have multiple certificates of <br />
+              Dose 1 generated from different <br />
+              accounts,you can merge them into the <br />
+              final vaccination certificate.</p>
           </div>
+        </div>
+          <div class="issuecard w-20">
+            <h6>Add Passpot</h6>
+            <p>You can link your passport to your <br />
+              vaccination certificate. By adding a <br />
+              passport to your vaccination certificate <br />
+              you can submit a request and get an <br />
+              international travel certificate.</p>
+          </div>
+          <div class="issuecard w-20">
+            <h6>Report Unknown Number</h6>
+            <p>If there are any unknown members are <br />
+              associated with your account, you can <br />
+              remove them from your account by <br />
+              reporting unknown members.</p>
+          </div>
+          <div class="issuecard w-20">
+            <h6>Transfer Member To New Number</h6>
+            <p>You can transfer members associated <br />
+              with your existing account to the new <br />
+              mobile number.</p>
+          </div>
+        </div>
+        </div>
+        <div class="">
+          <h2 class="d-flex justify-content-center">Frequently Asked Questions</h2>
+          <div class="questions">
+            <button><img src="" >Download</button>
+          </div>
+          <div class="">  <img src="https://www.cowin.gov.in/assets/images/faq_Section.svg"></div>
         </div>
     </section>
     <footer class="text-light">
-      <div class="w-100 bg-dark d-flex justify-content-between">
-        <div class="d-flex">
-        <div class="">
-          <h4>VACCINATION SERVICES</h4>
-          <p>Register Members</p>
-          <p>Search Vaccination Centers</p>
-          <p>Book Vaccination Slots</p>
-          <p>Manage Appointment</p>
-          <p>Download Certificate</p>
+      <div class="footer w-100 bg-dark d-flex justify-content-between">
+        <div class=" footer d-flex">
+          <div class="">
+            <h4>VACCINATION SERVICES</h4>
+            <p>Register Members</p>
+            <p>Search Vaccination Centers</p>
+            <p>Book Vaccination Slots</p>
+            <p>Manage Appointment</p>
+            <p>Download Certificate</p>
+          </div>
+          <div class="">
+            <h4>PLATFORMS</h4>
+            <p>Co-WIN Internationals</p>
+            <p>Vaccinator</p>
+            <p>Department Login</p>
+            <p>Verify Certificates</p>
+            <p>Vaccination Statistics</p>
+          </div>
+          <div class="">
+            <h4>RESOURCES</h4>
+            <p>How To Get Vaccinated</p>
+            <p>Dos and Don'ts</p>
+            <p>Overview</p>
+            <p>Open API's</p>
+            <p>Download Certificate</p>
+          </div>
         </div>
         <div class="">
-          <h4>PLATFORMS</h4>
-          <p>Co-WIN Internationals</p>
-          <p>Vaccinator</p>
-          <p>Department Login</p>
-          <p>Verify Certificates</p>
-          <p>Vaccination Statistics</p>
-        </div>
-        <div class="">
-          <h4>RESOURCES</h4>
-          <p>How To Get Vaccinated</p>
-          <p>Dos and Don'ts</p>
-          <p>Overview</p>
-          <p>Open API's</p>
-          <p>Download Certificate</p>
-        </div>
-      </div>
-        <div class="">
-          <div class="d-flex">
+          <div class=" footer d-flex">
             <div class="">
               <h4>RESOURCES</h4>
               <p>How To Get Vaccinated</p>
@@ -700,7 +885,7 @@
               <p>Dos and Don'ts</p>
             </div>
           </div>
-          <div class="d-flex">
+          <div class=" footer d-flex">
             <div class="">
               <h4>RESOURCES</h4>
               <p>How To Get Vaccinated</p>
@@ -721,9 +906,11 @@
         </div>
       </div>
       <div class="d-flex w-100">
-<div class=""><h6>Copyright © 2021 Co-WIN. All Rights Reserved</h6></div>
-<div class=""></div>
-<div class=""></div>
+        <div class="">
+          <h6>Copyright © 2021 Co-WIN. All Rights Reserved</h6>
+        </div>
+        <div class=""></div>
+        <div class=""></div>
       </div>
     </footer>
   </main>
